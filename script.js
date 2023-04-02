@@ -3,7 +3,7 @@ console.log('Hello World') // console log is a debugging tool used to log to the
 
 // Conditional expressions - In js we use true/truthy & false/falsey 
 
-if (NaN) {
+if ("abc" === "cde") {
     console.log("truthy!")
 } else {
     console.log("falsey!")
@@ -14,6 +14,15 @@ if (NaN) {
 // null is falsey
 // values that are falsey: false, zero, NaN, empty string 
 
+//The Not Operator (!)
+    // also known as the "bang" operator, a true or truthy expression to boolean value of false and vice versa. 
+
+console.log(!false === true) // true 
+console.log(!null === true) // true 
+console.log(!3 === false) // true 
+console.log(!"" === true) // true 
+
+console.log(!!3) // it takes the value and outputs the boolean value 
 
 
 
