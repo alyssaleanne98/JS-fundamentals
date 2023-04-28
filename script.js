@@ -2,28 +2,42 @@ console.log('Hello World') // console log is a debugging tool used to log to the
 // node script.js - node is a way to execute js. 
 
 // Conditional expressions - In js we use true/truthy & false/falsey 
+    // a statement that can be written in the form "if P then Q" where P and Q are sentences.
 
-if ("abc" === "cde") {
+if ("abc" === "cde") { // === strict equal checks whether its two operands are equal 
     console.log("truthy!")
 } else {
     console.log("falsey!")
+}
+
+if ("cde" === "efg") {
+    console.log("truthy") 
+} else {
+    console.log("falsey")
+}
+
+if ("alyssa" === "alexis") {
+    console.log("truthy!")
+} else {
+    console.log("falsey")
 }
 //we can easily test expressions (even strings) by typing it in the place of true
 // empty strings are falsey 
 // any string that has values inside is: truthy 
 // null is falsey
+// two data types that are falsey: null and undefined.
 // values that are falsey: false, zero, NaN, empty string 
 
 //The Not Operator (!)
 // also known as the "bang" operator, a true or truthy expression to boolean value of false and vice versa. 
 
-console.log(!false === true) // true 
-console.log(!null === true) // true 
-console.log(!3 === false) // true 
-console.log(!"" === true) // true 
+// console.log(!false === true) // true 
+// console.log(!null === true) // true 
+// console.log(!3 === false) // true 
+// console.log(!"" === true) // true 
 
-console.log(!!3) // it takes the value and outputs the boolean value 
-
+// console.log(!!3) // it takes the value and outputs the boolean value 
+console.log(!true === false)
 
 // Boolean Logic - Comparison Operators 
 
@@ -40,7 +54,7 @@ console.log(!!3) // it takes the value and outputs the boolean value
 
 console.log("hello" || "goodbye")
 
-console.log("false" || "true")
+console.log("3" || "0")
 
 if (false || 0 || null || undefined) { // this gets reduced down to undefined which is falsey
     console.log("truthy")
@@ -49,6 +63,7 @@ if (false || 0 || null || undefined) { // this gets reduced down to undefined wh
 }
 
 console.log(("a" && "b") || (false, undefined))
+console.log("4" || "0")
 // you can have OR and AND 
 // if we go left to right, we are introducing two sets of conditionals and comparing the two conditionals with OR ||
 // first conditional is "true" and second conditional is "false"
@@ -66,3 +81,11 @@ x++ // what is x++? it is incrementing x by 1
 }
 // once x reaches > 10, the statement evaluates to false 
 // 1:12 recording 
+
+let z = 3
+while (z <= 5) {
+    var text = "Number" + z
+    console.log(text)
+    z++
+}
+
