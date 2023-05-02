@@ -109,3 +109,20 @@ while (alex <= 21) {
     alex ++
     console.log(msg)
 }
+
+// Branching statement 
+
+if (alex === 12)
+console.log("This code will run only if alex equals 12 ")
+
+const color = "green"
+if (color === green) {
+    console.log("Go")
+} else if (color === yellow) {
+    console.log("Slow down")
+} else if (color === red) {
+    console.log("Stop")
+}
+
+// Looping statement
+
