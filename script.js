@@ -171,11 +171,69 @@ function sumArray (numbers) { // numbers is the argument
 }
 
 // Ex 5.
-function sumArray(numbers) // function named sumArray that passes in a single parameter of 'numbers'.
-const numbers = [1, 2, 3]; // we defined an array of numbers and then called the sumArray function with this array as an argument. 
-const sum = sumArray(numbers);
-console.log(sum);
+// function sumArray(numbers) // function named sumArray that passes in a single parameter of 'numbers'. A parameter is a named variable and is used to receive the value of an argument that is passed to the function when it is called.
+// const numbers = [1, 2, 3]; // we defined an array of numbers and then called the sumArray function with this array as an argument. 
+// const sum = sumArray(numbers);
+// console.log(sum);
+
+//Diagram to illustrate the difference between parameters and arguments
+// +---------+
+// | function|
+// |         |
+// |  greet  |
+// |         |
+// +---------+
+//       |
+//       | parameter
+//       V
+// +---------+
+// |   name  |
+// +---------+
+//       |
+//       V
+// +---------+
+// argument        |  "Alice"|
+// passed to       +---------+
+// the function         |
+//       V
+// logs "Hello, Alice!" to the console
+
+// +---------+
+// | function|
+// |         |
+// |  greet  |
+// |         |
+// +---------+
+//       |
+//       | parameter
+//       V
+// +---------+
+// |   name  |
+// +---------+
+//       |
+// argument            V
+// passed to       +---------+
+// the function         | "Bob"  |
+// +---------+
+//       |
+//       V
+// logs "Hello, Bob!" to the console
 
 
-// Looping statement
+
+// Looping statement while 
+
+let num = 0
+do {
+    console.log(num)
+    num+=2
+} while (num <= 10) 
+
+// Looping statement for 
+
+let colors = ["red", "blue"]
+for (let idx = 0; idx < colors.length; idx++) {
+    console.log(colors[idx])
+}
+
 
