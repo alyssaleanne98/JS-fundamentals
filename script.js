@@ -89,3 +89,23 @@ while (z <= 5) {
     z++
 }
 
+let age = 23 
+while (age <= 24) {
+    var msg = "Alexis is" + age
+    age ++ 
+    console.log(age)
+}
+
+let a = 6 
+while (a <= 8) {
+    var msg = a + " is the perfect time "
+    a++
+    console.log(msg)
+}
+
+let alex = 20
+while (alex <= 21) {
+    var msg = "She is " + alex 
+    alex ++
+    console.log(msg)
+}
