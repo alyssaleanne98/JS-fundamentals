@@ -116,13 +116,66 @@ if (alex === 12)
 console.log("This code will run only if alex equals 12 ")
 
 const color = "green"
-if (color === green) {
+if (color === "green") {
     console.log("Go")
-} else if (color === yellow) {
+} else if (color === "yellow") {
     console.log("Slow down")
-} else if (color === red) {
+} else if (color === "red") {
     console.log("Stop")
 }
+
+
+// Ex 2.
+
+// Write an if...else if statement that checks the value of a variable named score and logs the corresponding letter grade to the console:
+
+const score = 95 // naming the variable 'score'
+if (score >= 90) {
+    console.log("A")
+} else if (score >= 80) {
+    console.log("B")
+} else if (score >=70) {
+    console.log("C")
+} else if (score >=60) {
+    console.log("D")
+} else {
+    console.log("F")
+}
+
+// Ex 3. 
+
+// Write a function named greet that takes a string argument name and logs a personalized greeting to the console.
+
+// If name is undefined or null, log "Hello, stranger!"
+// If name is a string, log "Hello, <name>!" where <name> is the value of name.
+
+// function named 'greet'
+
+function greet(name) {
+    if (!name) {
+        console.log("Hello stranger!");
+    } else if (typeof name === "string") {
+        console.log(`Hello, ${name}!`);
+    }
+}
+greet ("Alyssa");
+
+// Ex 4. 
+function sumArray (numbers) { // numbers is the argument
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers [i];
+    }
+    return sum;
+
+}
+
+// Ex 5.
+function sumArray(numbers) // function named sumArray that passes in a single parameter of 'numbers'.
+const numbers = [1, 2, 3]; // we defined an array of numbers and then called the sumArray function with this array as an argument. 
+const sum = sumArray(numbers);
+console.log(sum);
+
 
 // Looping statement
 
