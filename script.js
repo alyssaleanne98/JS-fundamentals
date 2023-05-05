@@ -236,4 +236,10 @@ for (let idx = 0; idx < colors.length; idx++) {
     console.log(colors[idx])
 }
 
+// Numbers 0-99 ascending 
+let numb = 0 
+do {
+    console.log(numb)
+    numb+=1
+} while (numb <= 99)
 
